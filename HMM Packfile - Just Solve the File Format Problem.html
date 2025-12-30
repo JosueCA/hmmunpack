@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://justsolve.archiveteam.org/wiki/HMM_Packfile -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HMM Packfile - Just Solve the File Format Problem</title>
+
+<meta name="generator" content="MediaWiki 1.19.2">
+<link rel="shortcut icon" href="http://justsolve.archiveteam.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://justsolve.archiveteam.org/opensearch_desc.php" title="Just Solve the File Format Problem (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://fileformats.archiveteam.org/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/publicdomain/zero/1.0/">
+<link rel="alternate" type="application/atom+xml" title="Just Solve the File Format Problem Atom feed" href="http://justsolve.archiveteam.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./HMM Packfile - Just Solve the File Format Problem_files/load.php">
+<style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: justsolve:resourceloader:filter:minify-css:7:8b08bdc91c52a9ffba396dccfb5b473c */
+
+
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: justsolve:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: justsolve:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="./HMM Packfile - Just Solve the File Format Problem_files/load(1).php"></script><script src="./HMM Packfile - Just Solve the File Format Problem_files/load(2).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HMM_Packfile","wgTitle":"HMM Packfile","wgCurRevisionId":43620,"wgArticleId":11096,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["File Formats","Electronic File Formats","Game data files","File formats with extension .pak","FormatInfo without mimetypes","Archiving"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"HMM_Packfile","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: justsolve:resourceloader:filter:minify-js:7:9983699ab6150ffa89a90653b2338ac8 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script type="text/javascript" src="./HMM Packfile - Just Solve the File Format Problem_files/load(3).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HMM_Packfile skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;" class="js-messagebox"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">HMM Packfile</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Just Solve the File Format Problem</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#mw-head">navigation</a>,
+					<a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox formatinfo" border="0" style="float: right; border: 1px solid #666666; max-width: 25%; overflow: hidden; background-color: #F8E0F7; padding: 0.25em; margin: 0.25em 1em;">
+<tbody><tr>
+<th colspan="2"><a href="http://justsolve.archiveteam.org/wiki/File_Formats" title="File Formats">File Format</a></th>
+</tr>
+
+<tr>
+<th>Name</th>
+<td>HMM Packfile</td>
+</tr>
+
+
+<tr>
+<th> Ontology
+</th>
+<td>
+<ul><li>
+<a href="http://justsolve.archiveteam.org/wiki/Electronic_File_Formats" title="Electronic File Formats">Electronic File Formats</a>
+<ul><li>
+<a href="http://justsolve.archiveteam.org/wiki/Game_data_files" title="Game data files">Game data files</a>
+<ul><li>
+<strong class="selflink">HMM Packfile</strong>
+</li></ul>
+</li></ul>
+</li></ul>
+</td>
+</tr>
+<tr>
+<th><a href="http://justsolve.archiveteam.org/wiki/Filename_extension" title="Filename extension">Extension(s)</a></th>
+<td><code>.pak</code></td>
+</tr>
+
+
+</tbody></table>
+<p>The <b>HMM Packfile</b> is a generic game data format that packages files for distribution with digital games. HMM likely stands for <a rel="nofollow" class="external text" href="https://www.haemimontgames.com/">"Haemimont-Smartcom"</a> who are a games publisher associated with at least two different releases known to contain HMM Packfiles - <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rising_Kingdoms">"Rising Kingdoms"</a> (2005) and <a rel="nofollow" class="external text" href="https://www.discogs.com/de/release/1053674-Backstreet-Boys-Moving-Puzzle">"Backstreet Boys Moving Puzzle"</a> (1999).
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Identification"><span class="tocnumber">1</span> <span class="toctext">Identification</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Suggested_PRONOM_signature"><span class="tocnumber">1.1</span> <span class="toctext">Suggested PRONOM signature</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Format_layout"><span class="tocnumber">2</span> <span class="toctext">Format layout</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#File_directory"><span class="tocnumber">2.1</span> <span class="toctext">File directory</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Software_for_unpacking_HMM_Packfiles"><span class="tocnumber">3</span> <span class="toctext">Software for unpacking HMM Packfiles</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Sample_files"><span class="tocnumber">4</span> <span class="toctext">Sample files</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Further_information"><span class="tocnumber">5</span> <span class="toctext">Further information</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#Additional_links"><span class="tocnumber">6</span> <span class="toctext">Additional links</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="Identification"> Identification </span></h2>
+<p>Magic for HMM Packfiles is <code>HMMSYS PackFile</code>. Although more data can be taken from the 40-byte format header which is <a rel="nofollow" class="external text" href="http://wiki.xentax.com/index.php/Rising_Kingdoms_PAK">documented as</a>: 
+</p>
+<pre>   char {16}    - Header ("HMMSYS PackFile" + LF)
+   uint32 {4}   - Unknown (26)
+   byte {12}    - null-bytes.
+   uint32 {4}   - Number Of Files.
+   uint32 {4}   - Directory length.
+</pre>
+<p>Example data (file has 67 files):
+</p>
+<pre>  magic: 48 4d 4d 53 59 53 20 50 61 63 6b 46 69 6c 65 0a
+  unknown constant: 1a 00 00 00 
+  null: 00 00 00 00 00 00 00 00 00 00 00 00
+  number of files: 43 00 00 00
+  directory length: ec 11 00 00
+</pre>
+<p><b>Note:</b> The Python implementation of the HMM unpacker below <a rel="nofollow" class="external text" href="https://github.com/ross-spencer/hmmunpack/blob/6b62bc0e61b9901c997da06bacb13c63bb576d1b/hmmunpack.py#L113-L115">notes that it cannot confirm "directory length" as a field in the structure here</a>. The value does not seem to align to the different section or object boundaries in the file when converted to an integer. Additional research here would be beneficial.
+</p>
+<h3> <span class="mw-headline" id="Suggested_PRONOM_signature"> Suggested PRONOM signature </span></h3>
+<p>A PRONOM signature may look as follows:
+</p>
+<pre>   484d4d535953205061636b46696c650a1a000000000000000000000000000000
+</pre>
+<h2> <span class="mw-headline" id="Format_layout"> Format layout </span></h2>
+<p>The format layout looks as follows:
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th> HMM Packfile
+</th></tr>
+
+<tr>
+<td> Format header (40 bytes)
+</td></tr>
+
+<tr>
+<td> File directory (n-bytes * no_files)
+</td></tr>
+
+<tr>
+<td> Padding (no_files * 4-bytes)
+</td></tr>
+
+<tr>
+<td> Files (n-bytes * no_files * file_length)
+</td></tr></tbody></table>
+<h3> <span class="mw-headline" id="File_directory"> File directory </span></h3>
+<pre>   byte {1}     - Filename Length
+   byte {1}     - Previous Filename Reuse Length
+   char {X}     - Filename Part (length = filenameLength - previousFilenameReuseLength)
+   uint32 {4}   - File Offset
+   uint32 {4}   - File Length
+</pre>
+<p>The file directory is a variably sized section of the file. It contains information about the names of the files "packed" into the object. Filenames are encoded using a basic compression mechanism. This mechanism saves space by avoiding repetition of the logical stricture of the packed objects on-disk. To do this, a "reuse length" field is associated with every file. If this value is greater than zero then the number it documents describes the number of bytes to take from the beginning of the previous filename - these are then amended onto the beginning of the current file name as we walk through the directory. We can infer that files are stored a predicable order based on how they were originally stored on disk.
+</p>
+<h2> <span class="mw-headline" id="Software_for_unpacking_HMM_Packfiles"> Software for unpacking HMM Packfiles </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/meh/fffs/blob/862887a2214e146f70b7eb362a6120fe3225fb1a/examples/pak.rb">Ruby script for unpacking HMM Packfiles</a> NB. Needs updating for modern Ruby.
+</li><li> <a rel="nofollow" class="external text" href="https://github.com/ross-spencer/hmmunpack">Python script for unpacking HMM Packfiles</a> 
+</li></ul>
+<h2> <span class="mw-headline" id="Sample_files"> Sample files </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://archive.org/download/backstreet-boys-puzzle/Backstreet%20Boys%20-%20Puzzles%20in%20Motion%20%281999%29%28Ravensburger%29%5BMac-PC%5D.iso/">Backstreet Boys ISO on the Internet Archive</a>.
+</li><li> <a rel="nofollow" class="external text" href="https://archive.org/download/NemesisOfTheRomanEmpireWindows/Nemesis_of_the_Roman_Empire_Win_Preinstalled_EN.zip">Nemesis of the Roman Empire ISO on the Internet Archive</a>.
+</li></ul>
+<h2> <span class="mw-headline" id="Further_information"> Further information </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Haemimont_Games">Haemimont Games on Wikipedia</a>.
+</li><li> <a rel="nofollow" class="external text" href="http://wiki.xentax.com/index.php/Rising_Kingdoms_PAK">Rising Kingdoms PAK (Packfile) reverse engineering on the Xentax forum</a>.
+</li></ul>
+<h2> <span class="mw-headline" id="Additional_links"> Additional links </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.gamersglobal.de/spiel/156072/moving-puzzle-backstreet-boys">Information about the Backstreet Boys Moving Puzzle</a>.
+</li><li> <a rel="nofollow" class="external text" href="https://archive.org/search.php?query=creator%3A%22Haemimont+Games%22">Haemimont Games on the Internet Archive</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 180/1000000
+Post-expand include size: 1672/2097152 bytes
+Template argument size: 620/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key justsolve:pcache:idhash:11096-0!*!0!!en!*!* and timestamp 20251227112426 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://fileformats.archiveteam.org/index.php?title=HMM_Packfile&amp;oldid=43620">http://fileformats.archiveteam.org/index.php?title=HMM_Packfile&amp;oldid=43620</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://justsolve.archiveteam.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="http://justsolve.archiveteam.org/wiki/Category:File_Formats" title="Category:File Formats">File Formats</a></li><li><a href="http://justsolve.archiveteam.org/wiki/Category:Electronic_File_Formats" title="Category:Electronic File Formats">Electronic File Formats</a></li><li><a href="http://justsolve.archiveteam.org/wiki/Category:Game_data_files" title="Category:Game data files">Game data files</a></li><li><a href="http://justsolve.archiveteam.org/wiki/Category:File_formats_with_extension_.pak" title="Category:File formats with extension .pak">File formats with extension .pak</a></li><li><a href="http://justsolve.archiveteam.org/wiki/Category:Archiving" title="Category:Archiving">Archiving</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden category: <ul><li><a href="http://justsolve.archiveteam.org/wiki/Category:FormatInfo_without_mimetypes" title="Category:FormatInfo without mimetypes">FormatInfo without mimetypes</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="http://justsolve.archiveteam.org/index.php?title=Special:UserLogin&amp;returnto=HMM+Packfile" title="You are encouraged to log in; however, it is not mandatory [alt-o]" accesskey="o">Log in / create account</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile" title="View the content page [alt-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://justsolve.archiveteam.org/index.php?title=Talk:HMM_Packfile&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://justsolve.archiveteam.org/index.php?title=HMM_Packfile&amp;action=edit" title="This page is protected.
+You can view its source [alt-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://justsolve.archiveteam.org/index.php?title=HMM_Packfile&amp;action=history" title="Past revisions of this page [alt-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="http://justsolve.archiveteam.org/wiki/HMM_Packfile#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://justsolve.archiveteam.org/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search Just Solve the File Format Problem [alt-f]" accesskey="f" id="searchInput">			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">					<input type="hidden" name="title" value="Special:Search">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/thumbsup.png);" href="http://justsolve.archiveteam.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id="p-navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://justsolve.archiveteam.org/wiki/Main_Page" title="Visit the main page [alt-z]" accesskey="z">Main page</a></li>
+			<li id="n-File-formats"><a href="http://justsolve.archiveteam.org/wiki/File_Formats">File formats</a></li>
+			<li id="n-Formats-by-extension"><a href="http://justsolve.archiveteam.org/wiki/Category:File_formats_by_extension">Formats by extension</a></li>
+			<li id="n-Still-more-extensions"><a href="http://justsolve.archiveteam.org/wiki/Category:File_Format_Extension">Still more extensions</a></li>
+			<li id="n-Software"><a href="http://justsolve.archiveteam.org/wiki/Software">Software</a></li>
+			<li id="n-Glossary"><a href="http://justsolve.archiveteam.org/wiki/Glossary">Glossary</a></li>
+			<li id="n-Library"><a href="http://justsolve.archiveteam.org/wiki/Library">Library</a></li>
+			<li id="n-Sources"><a href="http://justsolve.archiveteam.org/wiki/Sources">Sources</a></li>
+			<li id="n-Categories"><a href="http://justsolve.archiveteam.org/wiki/Category:Top_Level_Categories">Categories</a></li>
+			<li id="n-portal"><a href="http://justsolve.archiveteam.org/wiki/Just_Solve_the_File_Format_Problem:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="http://justsolve.archiveteam.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://justsolve.archiveteam.org/wiki/Special:Random" title="Load a random page [alt-x]" accesskey="x">Random page</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://justsolve.archiveteam.org/wiki/Special:WhatLinksHere/HMM_Packfile" title="A list of all wiki pages that link here [alt-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://justsolve.archiveteam.org/wiki/Special:RecentChangesLinked/HMM_Packfile" title="Recent changes in pages linked from this page [alt-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://justsolve.archiveteam.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-q]" accesskey="q">Special pages</a></li>
+			<li><a href="http://justsolve.archiveteam.org/index.php?title=HMM_Packfile&amp;printable=yes" rel="alternate">Printable version</a></li>
+			<li id="t-permalink"><a href="http://justsolve.archiveteam.org/index.php?title=HMM_Packfile&amp;oldid=43620" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 November 2022, at 04:58.</li>
+											<li id="footer-info-viewcount">This page has been accessed 7,054 times.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://justsolve.archiveteam.org/wiki/Just_Solve_the_File_Format_Problem:Privacy_policy" title="Just Solve the File Format Problem:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://justsolve.archiveteam.org/wiki/Just_Solve_the_File_Format_Problem:About" title="Just Solve the File Format Problem:About">About Just Solve the File Format Problem</a></li>
+											<li id="footer-places-disclaimer"><a href="http://justsolve.archiveteam.org/wiki/Just_Solve_the_File_Format_Problem:General_disclaimer" title="Just Solve the File Format Problem:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="./HMM Packfile - Just Solve the File Format Problem_files/cc-0.png" alt="Creative Commons 0" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./HMM Packfile - Just Solve the File Format Problem_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script src="./HMM Packfile - Just Solve the File Format Problem_files/load(4).php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script><script src="./HMM Packfile - Just Solve the File Format Problem_files/load(5).php" type="text/javascript"></script>
+<!-- Served in 0.317 secs. -->
+	
+
+</body></html>

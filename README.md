@@ -3,7 +3,7 @@
 Unpack script for HMM packfiles (Imperivm). See script documentation for more on
 the format.
 
-# Unpack
+### Unpack
 python3 hmmunpack/hmmunpack.py data.pak
 
 ### Pack
